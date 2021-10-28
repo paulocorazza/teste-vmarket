@@ -1,0 +1,8 @@
+{
+    "name":"crud-php/vbmarket",
+    "autoload":{
+      "psr-4":{
+        "App\\":"app/"
+      }
+    }
+  }
