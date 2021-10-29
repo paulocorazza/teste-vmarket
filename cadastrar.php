@@ -2,30 +2,25 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-define('TITLE', 'Cadastrar Produto');
-
-
-//VALIDAÇÃO DO POST
+define('TITLE','Cadastrar Produto');
 
 use App\Entity\Produto;
 use App\Session\Login;
 
-//obriga o usuário a estar logado
 Login::requireLogin();
 
+if(isset($_POST['descricao'])){
 
-if(isset($_POST['descricao'],$_POST['valor'])){
     $produto = new Produto();
     $produto->descricao = $_POST['descricao'];
-    $produto->valor = $_POST['valor'];
-    $produto->barras = $_POST['barras'];
+    $produto->cod_barras = $_POST['cod_barras'];
     $produto->icms = $_POST['icms'];
     $produto->ipi = $_POST['ipi'];
+    $produto->valor = $_POST['valor'];
     $produto->cadastrarProduto();
 
     header('location: produtos.php?status=success');
     exit;
-    
 }
 
 include __DIR__.'/includes/header.php';

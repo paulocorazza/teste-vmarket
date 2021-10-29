@@ -30,7 +30,7 @@ if(!$produto instanceof Produto){
 if(isset($_POST['descricao'])){
 
   $produto->descricao = $_POST['descricao'];
-  $produto->barras = $_POST['barras'];
+  $produto->cod_barras = $_POST['cod_barras'];
   $produto->valor = $_POST['valor'];
   $produto->icms = $_POST['icms'];
   $produto->ipi = $_POST['ipi'];
@@ -41,5 +41,5 @@ if(isset($_POST['descricao'])){
 }
 
 include __DIR__.'/includes/header.php';
-include __DIR__.'/includes/formulario.php';
+include __DIR__.'/includes/formulario_edit.php';
 include __DIR__.'/includes/footer.php';

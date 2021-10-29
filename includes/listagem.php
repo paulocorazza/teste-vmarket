@@ -28,7 +28,7 @@
     $resultados .= '<tr>
                       <td>'.$produto->id.'</td>
                       <td>'.$produto->descricao.'</td>
-                      <td>'.$produto->barras.'</td>
+                      <td>'.$produto->cod_barras.'</td>
                       <td>'.$produto->valor.'</td>
                       <td>'.$produto->icms.'</td>
                       <td>'.$produto->ipi.'</td>
@@ -59,13 +59,13 @@
       <button class="btn btn-success">Novo Produto</button>
     </a>
     <p>
-    <h3>Produtos</h3>
+    <h3 class="text-center">Produtos</h3>
   </section>
 
   <section>
 
     <table class="table bg-light mt-3 table-striped">
-        <thead  class="bg-danger text-light">
+        <thead  class="bg-primary text-light">
           <tr>
             <th>ID</th>
             <th>Decrição</th>

@@ -43,7 +43,6 @@ create table usuarios(
 )
 
 
-drop table usuarios
 
 select * from usuario
 
@@ -62,6 +61,7 @@ update usuario set nome = 'Pedro Malazarte' where email = 'pedro@vbmarket.com.br
 
 insert into produto (valor,cod_barras,icms,ipi,descricao)
 	values (1200.00,'78912415678398823',18, 5, 'airpods pro apple');
+
 
 
 SELECT * from produto p 

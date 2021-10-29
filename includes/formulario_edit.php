@@ -9,14 +9,14 @@
     <div class="row">
       <div class="col-md-6">
         <div class="form-group">
-          <label for="descricao">Descrição</label>
-          <input type="text" class="form-control" name="descricao">
+          <label>Descrição</label>
+          <input type="text" class="form-control" name="descricao" value="<?= $produto->descricao ?>">
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label>Código de Barras</label>
-          <input type="text" class="form-control" name="cod_barras">
+          <input type="text" class="form-control" name="cod_barras" value="<?= $produto->cod_barras?>">
         </div>
       </div>
     </div>
@@ -24,19 +24,19 @@
         <div class="col-md-4">
           <div class="form-group">
             <label>Valor do Produto</label>
-            <input type="number" class="form-control" name="valor">
+            <input type="number" class="form-control" name="valor" value="<?= $produto->valor ?>">
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
               <label>Valor do ICMS</label>
-              <input type="number" class="form-control" name="icms">
+              <input type="number" class="form-control" name="icms" value="<?= $produto->icms ?>">
             </div>
         </div>
         <div class="col-md-4">
         <div class="form-group">
             <label>Valor do IPI</label>
-            <input type="number" name="ipi" class="form-control">
+            <input type="number" name="ipi" class="form-control" value="<?= $produto->ipi ?>">
           </div>
         </div>
     </div>
@@ -46,3 +46,7 @@
     </div>
   </form>
 </main>
+
+<script>
+    
+</script>

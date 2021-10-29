@@ -14,7 +14,7 @@ class Produto
     public $valor;
 
     /** codigo de barras @var string */
-    public $barras;
+    public $cod_barras;
 
     /** valor icms @var integer */
     public $icms;
@@ -35,7 +35,7 @@ class Produto
         $banco = new Database('produto');
         $this->id =  $banco->insert([
             'valor' => $this->valor,
-            'cod_barras' => $this->barras,
+            'cod_barras' => $this->cod_barras,
             'icms' => $this->icms,
             'ipi' => $this->ipi,
             'descricao' => $this->descricao,
@@ -49,7 +49,7 @@ class Produto
     {
         return (new Database('produto'))->update('id = '.$this->id,[
                 'valor' => $this->valor,
-                'cod_barras' => $this->barras,
+                'cod_barras' => $this->cod_barras,
                 'icms' => $this->icms,
                 'ipi' => $this->ipi,
                 'descricao' => $this->descricao,

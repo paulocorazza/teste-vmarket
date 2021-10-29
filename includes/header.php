@@ -2,9 +2,8 @@
 
  use App\Session\Login;
 
- $usuarioLogado = Login::getUsuarioLogado();
- 
- $usuario = $usuarioLogado ? $usuarioLogado['nome']:'Visitante <a href="login.php" class="text-light font-weight-bold ml-2>Entrar</a>';
+ $usuarioLogado =  Login::getUsuarioLogado();
+ $usuario = $usuarioLogado ? '<span>Bem vindo,</span>'. $usuarioLogado['nome']:' Visitante <a href="login.php" class="text-light font-weight-bold ml-2>Entrar</a>';
  
  
 ?>
@@ -19,10 +18,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="produtos.php">Produtos</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="logout.php">Sair</a>
       </li>
     </ul>

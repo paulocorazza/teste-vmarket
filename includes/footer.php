@@ -1,8 +1,8 @@
 </div>
 <!-- fechamento da div container-->
-<p class="text-center"><a href="www.corazzati.com.br" class="text-light">www.corazzati.com.br</a></p>
-<p class="text-center">CorazzaTI - <?= date('Y') ?></p>
-<p class="text-center"><a href="mailto:paulo@corazzati.com.br" class="text-light">paulo@corazzati.com.br</a></p>
+
+<p class="text-center">Feito por Paulo Corazza - Teste técnico VMarket - <?= date('Y') ?></p>
+
 </div>
 
 <!-- Optional JavaScript -->
